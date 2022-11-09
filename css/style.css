@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #ececec;
+}
+
+.bg1{
+    height: 900px;
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/02/16/256258/a28b8111a62ea7ac040a56cf23775085.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #1e1e21;
+    background-blend-mode: overlay, color;
+}
+
+.bg1>div h1{
+    font-size: 3.8em;
+}
+
+.bg1>div h1, .bg1>div p{
+    color: white;
+    text-align: center;
+    font-family: "Roboto Light", sans-serif;
+}
+
+.bg2{
+    width: 100%;
+    height: 400px;
+
+}
+
+.bg2 p{
+    width: 800px;
+}
+
+.bg3{
+    height: 500px;
+    color: white;
+}
+
+.bg3 .df3>div{
+        padding: 3%;
+}
+
+.bg4{
+    height: 700px;
+    background-image: url("https://static.wikia.nocookie.net/starwars/images/c/c8/Imperialattackcruisers.png/revision/latest?cb=20140317112248");
+    background-blend-mode: overlay, color;
+    background-color: #1e1e21;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.bg4 h1{
+    width: 500px;
+    text-align: center;
+    font-size: 3.8em;
+}
+
+@media (max-width: 320px) {
+    .bg1>div p,.bg2>div p,.bg2>div h4{
+        width: 200px;
+    }
+    .bg1>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg3{
+        height: 800px;
+    }
+
+    .bg3 .df3{
+        flex-wrap: wrap;
+        align-items: center
+    }
+
+    .bg3 .df3>div{
+        flex-basis: 90%;
+        padding: 10px;
+    }
+
+    .bg1>div h1{
+        font-size: 2.8em;
+    }
+    .bg4 h1{
+        width: 300px;
+        text-align: center;
+        font-size: 3.8em;
+    }
+
+}
